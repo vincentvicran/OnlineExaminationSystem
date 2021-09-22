@@ -1,0 +1,14 @@
+D:\Project\DotnetProjectSixthSem\DAL\BLL\bin\Debug\netcoreapp3.1\BLL.deps.json
+D:\Project\DotnetProjectSixthSem\DAL\BLL\bin\Debug\netcoreapp3.1\BLL.dll
+D:\Project\DotnetProjectSixthSem\DAL\BLL\bin\Debug\netcoreapp3.1\BLL.pdb
+D:\Project\DotnetProjectSixthSem\DAL\BLL\bin\Debug\netcoreapp3.1\DAL.dll
+D:\Project\DotnetProjectSixthSem\DAL\BLL\bin\Debug\netcoreapp3.1\ViewModels.dll
+D:\Project\DotnetProjectSixthSem\DAL\BLL\bin\Debug\netcoreapp3.1\ViewModels.pdb
+D:\Project\DotnetProjectSixthSem\DAL\BLL\bin\Debug\netcoreapp3.1\DAL.pdb
+D:\Project\DotnetProjectSixthSem\DAL\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.AssemblyReference.cache
+D:\Project\DotnetProjectSixthSem\DAL\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfoInputs.cache
+D:\Project\DotnetProjectSixthSem\DAL\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfo.cs
+D:\Project\DotnetProjectSixthSem\DAL\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CoreCompileInputs.cache
+D:\Project\DotnetProjectSixthSem\DAL\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CopyComplete
+D:\Project\DotnetProjectSixthSem\DAL\BLL\obj\Debug\netcoreapp3.1\BLL.dll
+D:\Project\DotnetProjectSixthSem\DAL\BLL\obj\Debug\netcoreapp3.1\BLL.pdb
