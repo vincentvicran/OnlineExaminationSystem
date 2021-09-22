@@ -12,3 +12,17 @@ D:\Project\DotnetProjectSixthSem\DAL\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.Core
 D:\Project\DotnetProjectSixthSem\DAL\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CopyComplete
 D:\Project\DotnetProjectSixthSem\DAL\BLL\obj\Debug\netcoreapp3.1\BLL.dll
 D:\Project\DotnetProjectSixthSem\DAL\BLL\obj\Debug\netcoreapp3.1\BLL.pdb
+D:\Project\OnlineExaminationSystem\DAL\BLL\bin\Debug\netcoreapp3.1\BLL.deps.json
+D:\Project\OnlineExaminationSystem\DAL\BLL\bin\Debug\netcoreapp3.1\BLL.dll
+D:\Project\OnlineExaminationSystem\DAL\BLL\bin\Debug\netcoreapp3.1\BLL.pdb
+D:\Project\OnlineExaminationSystem\DAL\BLL\bin\Debug\netcoreapp3.1\DAL.dll
+D:\Project\OnlineExaminationSystem\DAL\BLL\bin\Debug\netcoreapp3.1\ViewModels.dll
+D:\Project\OnlineExaminationSystem\DAL\BLL\bin\Debug\netcoreapp3.1\ViewModels.pdb
+D:\Project\OnlineExaminationSystem\DAL\BLL\bin\Debug\netcoreapp3.1\DAL.pdb
+D:\Project\OnlineExaminationSystem\DAL\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.AssemblyReference.cache
+D:\Project\OnlineExaminationSystem\DAL\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfoInputs.cache
+D:\Project\OnlineExaminationSystem\DAL\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfo.cs
+D:\Project\OnlineExaminationSystem\DAL\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CoreCompileInputs.cache
+D:\Project\OnlineExaminationSystem\DAL\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CopyComplete
+D:\Project\OnlineExaminationSystem\DAL\BLL\obj\Debug\netcoreapp3.1\BLL.dll
+D:\Project\OnlineExaminationSystem\DAL\BLL\obj\Debug\netcoreapp3.1\BLL.pdb

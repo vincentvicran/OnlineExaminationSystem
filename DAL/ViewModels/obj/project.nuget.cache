@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IbW54k6aUcijWzEfIGLiIjajCVH7xmvoLcCqd/0dDd51+710mciQw+vkZvDwPVksoLqXI3vgOF8p3ps/kzu9EA==",
+  "dgSpecHash": "w+M7nH3pvbdttro3jx1R8gLtLUvr8ooeU/5EM8gVtNPeAQ41H4M7JRfmVOLi+MJ4Dxerdq6ixnhgrAc7v4xAxA==",
   "success": true,
-  "projectFilePath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\ViewModels\\ViewModels.csproj",
+  "projectFilePath": "D:\\Project\\OnlineExaminationSystem\\DAL\\ViewModels\\ViewModels.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vicran\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.10\\microsoft.aspnetcore.http.features.5.0.10.nupkg.sha512",
     "C:\\Users\\vicran\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

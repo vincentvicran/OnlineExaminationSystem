@@ -94,7 +94,7 @@ namespace Web.Controllers
             return RedirectToAction("Login", "Account");
         }
 
-        public IActionResult Profiel()
+        public IActionResult Profile()
         {
             LoginViewModel sessionObj = HttpContext.Session.Get<LoginViewModel>("loginvm");
             if (sessionObj != null)

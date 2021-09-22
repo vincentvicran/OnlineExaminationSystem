@@ -10,3 +10,15 @@ D:\Project\DotnetProjectSixthSem\DAL\ViewModels\obj\Debug\netcoreapp3.1\ViewMode
 D:\Project\DotnetProjectSixthSem\DAL\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.csproj.CopyComplete
 D:\Project\DotnetProjectSixthSem\DAL\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.dll
 D:\Project\DotnetProjectSixthSem\DAL\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.pdb
+D:\Project\OnlineExaminationSystem\DAL\ViewModels\bin\Debug\netcoreapp3.1\ViewModels.deps.json
+D:\Project\OnlineExaminationSystem\DAL\ViewModels\bin\Debug\netcoreapp3.1\ViewModels.dll
+D:\Project\OnlineExaminationSystem\DAL\ViewModels\bin\Debug\netcoreapp3.1\ViewModels.pdb
+D:\Project\OnlineExaminationSystem\DAL\ViewModels\bin\Debug\netcoreapp3.1\DAL.dll
+D:\Project\OnlineExaminationSystem\DAL\ViewModels\bin\Debug\netcoreapp3.1\DAL.pdb
+D:\Project\OnlineExaminationSystem\DAL\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.csproj.AssemblyReference.cache
+D:\Project\OnlineExaminationSystem\DAL\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.AssemblyInfoInputs.cache
+D:\Project\OnlineExaminationSystem\DAL\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.AssemblyInfo.cs
+D:\Project\OnlineExaminationSystem\DAL\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.csproj.CoreCompileInputs.cache
+D:\Project\OnlineExaminationSystem\DAL\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.csproj.CopyComplete
+D:\Project\OnlineExaminationSystem\DAL\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.dll
+D:\Project\OnlineExaminationSystem\DAL\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.pdb

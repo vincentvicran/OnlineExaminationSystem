@@ -5838,11 +5838,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\DotnetProjectSixthSem\\DAL\\ViewModels\\ViewModels.csproj",
+      "projectUniqueName": "D:\\Project\\OnlineExaminationSystem\\DAL\\ViewModels\\ViewModels.csproj",
       "projectName": "ViewModels",
-      "projectPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\ViewModels\\ViewModels.csproj",
+      "projectPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\ViewModels\\ViewModels.csproj",
       "packagesPath": "C:\\Users\\vicran\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\ViewModels\\obj\\",
+      "outputPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\ViewModels\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vicran\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5859,8 +5859,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Project\\DotnetProjectSixthSem\\DAL\\DAL\\DAL.csproj": {
-              "projectPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\DAL\\DAL.csproj"
+            "D:\\Project\\OnlineExaminationSystem\\DAL\\DAL\\DAL.csproj": {
+              "projectPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\DAL\\DAL.csproj"
             }
           }
         }

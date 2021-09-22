@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ViewModels.ResultViewModel>
+
+@{
+    ViewData["Title"] = "ViewResult";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml";
+
+}
+
+<h1>Exam Results</h1>
+
+<div>
+    <br />
+    <div>
+        <table id="resultGrid"
+               class="table table-stiped table-bordered dt-responsive nowrap"
+               width="100%" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Exam Name</th>
+                    <th>Total Questions</th>
+                    <th>Correct</th>
+                    <th>Wrong</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.ExamName</td>
+                        <td>@item.TotalQuestions</td>
+                        <td>@item.CorrectAnswer</td>
+                        <td>@item.WrongAnswer</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<div>
+    <a asp-action="Profile">Profile</a>
+</div>

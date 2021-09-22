@@ -1,0 +1,49 @@
+﻿@model ViewModels.StudentViewModel
+
+@{
+    ViewData["Title"] = "Profie";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml";
+
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Profile" method="post" enctype="multipart/form-data">
+            <input type="hidden" asp-for="Id" />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <img id="imgPicture" src="@Model.PictureFileName"
+                     style="height:64px; width:64px; border-radius:7px 7px 0 7px;" />
+                <input asp-for="PictureFile" type="file"
+                       style="position: absolute; top:0px;height:64px; width:64px;" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserName" class="control-label"></label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contact" class="control-label"></label>
+                <input asp-for="Contact" class="form-control" />
+                <span asp-validation-for="Contact" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CVFileName" class="control-label"></label>
+                @if (Model.CVFileName != null)
+                {
+                    <a href="@Model.CVFileName" target="_blank">Download/View CV</a>
+                }
+                <input asp-for="CVFile" class="form-control" />
+                <span asp-validation-for="CVFile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Update" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

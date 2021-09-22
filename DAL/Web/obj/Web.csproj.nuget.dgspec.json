@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\DotnetProjectSixthSem\\DAL\\Web\\Web.csproj": {}
+    "D:\\Project\\OnlineExaminationSystem\\DAL\\Web\\Web.csproj": {}
   },
   "projects": {
-    "D:\\Project\\DotnetProjectSixthSem\\DAL\\BLL\\BLL.csproj": {
+    "D:\\Project\\OnlineExaminationSystem\\DAL\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\DotnetProjectSixthSem\\DAL\\BLL\\BLL.csproj",
+        "projectUniqueName": "D:\\Project\\OnlineExaminationSystem\\DAL\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\BLL\\BLL.csproj",
+        "projectPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\vicran\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\BLL\\obj\\",
+        "outputPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vicran\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Project\\DotnetProjectSixthSem\\DAL\\ViewModels\\ViewModels.csproj": {
-                "projectPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\ViewModels\\ViewModels.csproj"
+              "D:\\Project\\OnlineExaminationSystem\\DAL\\ViewModels\\ViewModels.csproj": {
+                "projectPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\ViewModels\\ViewModels.csproj"
               }
             }
           }
@@ -62,14 +62,14 @@
         }
       }
     },
-    "D:\\Project\\DotnetProjectSixthSem\\DAL\\DAL\\DAL.csproj": {
+    "D:\\Project\\OnlineExaminationSystem\\DAL\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\DotnetProjectSixthSem\\DAL\\DAL\\DAL.csproj",
+        "projectUniqueName": "D:\\Project\\OnlineExaminationSystem\\DAL\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\DAL\\DAL.csproj",
+        "projectPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\vicran\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\DAL\\obj\\",
+        "outputPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vicran\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -138,14 +138,14 @@
         }
       }
     },
-    "D:\\Project\\DotnetProjectSixthSem\\DAL\\ViewModels\\ViewModels.csproj": {
+    "D:\\Project\\OnlineExaminationSystem\\DAL\\ViewModels\\ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\DotnetProjectSixthSem\\DAL\\ViewModels\\ViewModels.csproj",
+        "projectUniqueName": "D:\\Project\\OnlineExaminationSystem\\DAL\\ViewModels\\ViewModels.csproj",
         "projectName": "ViewModels",
-        "projectPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\ViewModels\\ViewModels.csproj",
+        "projectPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\ViewModels\\ViewModels.csproj",
         "packagesPath": "C:\\Users\\vicran\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\ViewModels\\obj\\",
+        "outputPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\ViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vicran\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -162,8 +162,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Project\\DotnetProjectSixthSem\\DAL\\DAL\\DAL.csproj": {
-                "projectPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\DAL\\DAL.csproj"
+              "D:\\Project\\OnlineExaminationSystem\\DAL\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\DAL\\DAL.csproj"
               }
             }
           }
@@ -202,14 +202,14 @@
         }
       }
     },
-    "D:\\Project\\DotnetProjectSixthSem\\DAL\\Web\\Web.csproj": {
+    "D:\\Project\\OnlineExaminationSystem\\DAL\\Web\\Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\DotnetProjectSixthSem\\DAL\\Web\\Web.csproj",
+        "projectUniqueName": "D:\\Project\\OnlineExaminationSystem\\DAL\\Web\\Web.csproj",
         "projectName": "Web",
-        "projectPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\Web\\Web.csproj",
+        "projectPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\Web\\Web.csproj",
         "packagesPath": "C:\\Users\\vicran\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\Web\\obj\\",
+        "outputPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vicran\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -226,11 +226,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Project\\DotnetProjectSixthSem\\DAL\\BLL\\BLL.csproj": {
-                "projectPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\BLL\\BLL.csproj"
+              "D:\\Project\\OnlineExaminationSystem\\DAL\\BLL\\BLL.csproj": {
+                "projectPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\BLL\\BLL.csproj"
               },
-              "D:\\Project\\DotnetProjectSixthSem\\DAL\\ViewModels\\ViewModels.csproj": {
-                "projectPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\ViewModels\\ViewModels.csproj"
+              "D:\\Project\\OnlineExaminationSystem\\DAL\\ViewModels\\ViewModels.csproj": {
+                "projectPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\ViewModels\\ViewModels.csproj"
               }
             }
           }
@@ -248,6 +248,14 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.10, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "cloudscribe.Web.Pagination": {
+              "target": "Package",
+              "version": "[3.1.0, )"
             }
           },
           "imports": [

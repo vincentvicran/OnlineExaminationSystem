@@ -5856,11 +5856,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\DotnetProjectSixthSem\\DAL\\BLL\\BLL.csproj",
+      "projectUniqueName": "D:\\Project\\OnlineExaminationSystem\\DAL\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\BLL\\BLL.csproj",
+      "projectPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\BLL\\BLL.csproj",
       "packagesPath": "C:\\Users\\vicran\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\BLL\\obj\\",
+      "outputPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vicran\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5877,8 +5877,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Project\\DotnetProjectSixthSem\\DAL\\ViewModels\\ViewModels.csproj": {
-              "projectPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\ViewModels\\ViewModels.csproj"
+            "D:\\Project\\OnlineExaminationSystem\\DAL\\ViewModels\\ViewModels.csproj": {
+              "projectPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\ViewModels\\ViewModels.csproj"
             }
           }
         }

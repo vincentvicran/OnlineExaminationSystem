@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\DotnetProjectSixthSem\\DAL\\DAL\\DAL.csproj": {}
+    "D:\\Project\\OnlineExaminationSystem\\DAL\\DAL\\DAL.csproj": {}
   },
   "projects": {
-    "D:\\Project\\DotnetProjectSixthSem\\DAL\\DAL\\DAL.csproj": {
+    "D:\\Project\\OnlineExaminationSystem\\DAL\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\DotnetProjectSixthSem\\DAL\\DAL\\DAL.csproj",
+        "projectUniqueName": "D:\\Project\\OnlineExaminationSystem\\DAL\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\DAL\\DAL.csproj",
+        "projectPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\vicran\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\DotnetProjectSixthSem\\DAL\\DAL\\obj\\",
+        "outputPath": "D:\\Project\\OnlineExaminationSystem\\DAL\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vicran\\AppData\\Roaming\\NuGet\\NuGet.Config",
