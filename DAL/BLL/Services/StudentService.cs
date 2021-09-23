@@ -28,9 +28,11 @@ namespace BLL.Services
             {
                 Students obj = vm.ConvertViewModel(vm);
                 await _unitOfWork.GenericRepository<Students>().AddAsync(obj);
+                _unitOfWork.Save();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
+                _iLogger.LogError(ex.Message);
                 return null;
             }
             return vm;

@@ -1,4 +1,5 @@
 ﻿using BLL.Services;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -15,12 +16,14 @@ namespace Web.Controllers
         private readonly IStudentService _studentService;
         private readonly IExamService _examService;
         private readonly IQnAService _qnAService;
+        private readonly IWebHostEnvironment _env;
 
-        public StudentsController(IStudentService studentService, IExamService examService, IQnAService qnAService)
+        public StudentsController(IStudentService studentService, IExamService examService, IQnAService qnAService, IWebHostEnvironment env)
         {
             _studentService = studentService;
             _examService = examService;
             _qnAService = qnAService;
+            _env = env;
         }
 
         public IActionResult Index(int pageNumber = 1, int pageSize=10)
@@ -93,7 +96,7 @@ namespace Web.Controllers
             }
             return RedirectToAction("Login", "Account");
         }
-
+        [HttpGet]
         public IActionResult Profile()
         {
             LoginViewModel sessionObj = HttpContext.Session.Get<LoginViewModel>("loginvm");
@@ -109,7 +112,7 @@ namespace Web.Controllers
             }
             return RedirectToAction("Login", "Account");
         }
-
+        [HttpPost]
         public IActionResult Profile([FromForm]StudentViewModel studentViewModel)
         {
             if (studentViewModel.PictureFile != null)

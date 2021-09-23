@@ -249,7 +249,6 @@ D:\Project\OnlineExaminationSystem\DAL\Web\obj\Debug\netcoreapp3.1\Razor\Views\U
 D:\Project\OnlineExaminationSystem\DAL\Web\obj\Debug\netcoreapp3.1\Razor\Views\Users\Create.cshtml.g.cs
 D:\Project\OnlineExaminationSystem\DAL\Web\obj\Debug\netcoreapp3.1\Razor\Views\Students\Index.cshtml.g.cs
 D:\Project\OnlineExaminationSystem\DAL\Web\obj\Debug\netcoreapp3.1\Razor\Views\Students\Create.cshtml.g.cs
-D:\Project\OnlineExaminationSystem\DAL\Web\obj\Debug\netcoreapp3.1\Razor\Views\Students\Profie.cshtml.g.cs
 D:\Project\OnlineExaminationSystem\DAL\Web\obj\Debug\netcoreapp3.1\Razor\Views\Students\AttendExam.cshtml.g.cs
 D:\Project\OnlineExaminationSystem\DAL\Web\obj\Debug\netcoreapp3.1\Razor\Views\Students\Result.cshtml.g.cs
 D:\Project\OnlineExaminationSystem\DAL\Web\obj\Debug\netcoreapp3.1\Razor\Views\Students\ViewResult.cshtml.g.cs
@@ -264,3 +263,6 @@ D:\Project\OnlineExaminationSystem\DAL\Web\obj\Debug\netcoreapp3.1\Razor\Views\A
 D:\Project\OnlineExaminationSystem\DAL\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginLayout.cshtml.g.cs
 D:\Project\OnlineExaminationSystem\DAL\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_StudentLayout.cshtml.g.cs
 D:\Project\OnlineExaminationSystem\DAL\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_TeacherLayout.cshtml.g.cs
+D:\Project\OnlineExaminationSystem\DAL\Web\obj\Debug\netcoreapp3.1\Razor\Views\Students\Profile.cshtml.g.cs
+D:\Project\OnlineExaminationSystem\DAL\Web\bin\Debug\netcoreapp3.1\Humanizer.dll
+D:\Project\OnlineExaminationSystem\DAL\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll

@@ -8,7 +8,6 @@ namespace ViewModels
     public class LoginViewModel
     {
         public int Id { get; set; }
-        [Required]
         public string Name { get; set; }
         [Required]
         public string UserName { get; set; }

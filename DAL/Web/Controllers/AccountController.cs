@@ -16,7 +16,7 @@ namespace Web.Controllers
         {
             _accountService = accountService;
         }
-
+        [HttpGet]
         public IActionResult Login()
         {
             LoginViewModel sessionObj = HttpContext.Session.Get<LoginViewModel>("loginvm");
@@ -28,11 +28,7 @@ namespace Web.Controllers
             }
         }
         
-        public IActionResult Logout()
-        {
-            HttpContext.Session.Set<LoginViewModel>("loginvm", null);
-            return RedirectToAction("Login");
-        }
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Login(LoginViewModel loginViewModel)
@@ -60,6 +56,13 @@ namespace Web.Controllers
             }
             return RedirectToAction("Profile", "Students");
         }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Set<LoginViewModel>("loginvm", null);
+            return RedirectToAction("Login");
+        }
+
         public IActionResult Index()
         {
             return View();

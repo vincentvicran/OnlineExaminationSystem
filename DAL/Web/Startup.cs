@@ -3,6 +3,7 @@ using DAL.Data;
 using DAL.UnitOfWork;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -30,12 +31,22 @@ namespace Web
             services.AddControllersWithViews();
             services.AddDbContext<ApplicationDbContext>
                 (options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<IGroupService, GroupService>();
             services.AddTransient<IStudentService, StudentService>();
             services.AddTransient<IExamService, ExamService>();
             services.AddTransient<IQnAService, QnAService>();
             services.AddTransient<IAccountService, AccountService>();
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            services.AddDistributedMemoryCache();
+
+            services.AddSession(options=>
+            {
+                options.IdleTimeout = TimeSpan.FromDays(30);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,7 +67,11 @@ namespace Web
 
             app.UseRouting();
 
+            app.UseAuthentication();
+
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {

@@ -48,7 +48,7 @@ namespace DAL.Data
                 entity.Property(e => e.Name).IsRequired().HasMaxLength(50);
                 entity.Property(e => e.UserName).IsRequired().HasMaxLength(50);
                 entity.Property(e => e.Password).IsRequired().HasMaxLength(50);
-                entity.Property(e => e.Contact).HasMaxLength(50);
+                entity.Property(e => e.Contact).IsRequired().HasMaxLength(50);
                 entity.Property(e => e.CVFileName).HasMaxLength(250);
                 entity.Property(e => e.PictureFileName).HasMaxLength(250);
                 //students have multiple classes or groups
