@@ -4,15 +4,16 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Users</h1>
-
+<h4>Users</h4>
+<hr />
 <div>
     <br />
     <a asp-action="Create" asp-controller="Users" class="btn btn-primary">Create</a>
+    <hr />
     <div>
         <table id="userGrid"
                class="table table-stiped table-bordered dt-responsive nowrap"
-               width="100%" cellspacing="0">
+               width="70%" cellspacing="0">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -29,7 +30,11 @@
                     <td>@item.Name</td>
                     <td>@item.UserName</td>
                     <td>@item.Role</td>
-                    <td> @Html.ActionLink("Delete", "Delete", new { userId = item.Id })</td>
+                    <td> 
+                        <a asp-action="Delete" asp-controller="Users"
+                           asp-all-route-data="@(new Dictionary<string, string>{{"userId",item.Id.ToString()}})"
+                           class="btn btn-outline-danger">Delete</a>
+                    </td>
                 </tr>
                 }
             </tbody>

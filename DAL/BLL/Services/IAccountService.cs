@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using ViewModels;
 
 namespace BLL.Services
@@ -10,9 +11,8 @@ namespace BLL.Services
         LoginViewModel Login(LoginViewModel vm);
         bool AddTeacher(UserViewModel vm);
         PagedResult<UserViewModel> GetAllTeachers(int pageNumber, int pageSize);
+        Task<UserViewModel> DeleteTeachers(UserViewModel vm);
+        UserViewModel GetTeacherDetails(int userId);
 
-        bool GetTeacher(UserViewModel vm);
-        bool GetTeacherById(int id);
-        bool DeleteTeacher(UserViewModel vm);
     }
 }

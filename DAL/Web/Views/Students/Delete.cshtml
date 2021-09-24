@@ -39,7 +39,8 @@
             </dd>
         </dl>
 
-        <input type="submit" value="Delete" class="btn btn-danger" asp-all-route-data="@(new Dictionary<string, string>{{"studentId", studentId.ToString()}})"/> |
+        <input type="submit" value="Delete" class="btn btn-danger" 
+               asp-all-route-data="@(new Dictionary<string, string>{{"studentId", studentId.ToString()}})"/> |
         <a asp-action="Index">Back to List</a>
     </form>
 </div>

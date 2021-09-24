@@ -9,19 +9,28 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Web</a>
-                <a class="navbar-brand" asp-area="" asp-controller="Users" asp-action="Index">Users</a>
-                <a class="navbar-brand" asp-area="" asp-controller="Groups" asp-action="Index">Groups</a>
-                <a class="navbar-brand" asp-area="" asp-controller="Students" asp-action="Index">Students</a>
-                <a class="navbar-brand" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
+                <a class="navbar-brand ml-1" asp-area="" asp-controller="Home" asp-action="Index">Online Examination</a>
+                <ul type="none" class="navbar-nav ml-auto">
+                    <li>
+                        <a class="nav-link pl-3 pr-3 border-right pb-0 pt-0 mt-2 border-secondary" asp-area="" asp-controller="Users" asp-action="Index">Users</a>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
+                    </li>
+                    <li>
+                        <a class="nav-link pl-3 pr-3 border-right pb-0 pt-0 mt-2 border-secondary" asp-area="" asp-controller="Groups" asp-action="Index">Groups</a>
+
+                    </li>
+                    <li>
+                        <a class="nav-link pl-3 pr-3" asp-area="" asp-controller="Students" asp-action="Index">Students</a>
+
+                    </li>
+                    <li>
+                        <a class="text-decoration-none btn btn-outline-secondary rounded-right float-right"
+                            asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
+
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -33,7 +42,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2021 - Online Examination - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

@@ -268,3 +268,4 @@ D:\Project\OnlineExaminationSystem\DAL\Web\bin\Debug\netcoreapp3.1\Humanizer.dll
 D:\Project\OnlineExaminationSystem\DAL\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 D:\Project\OnlineExaminationSystem\DAL\Web\obj\Debug\netcoreapp3.1\Razor\Views\Users\Delete.cshtml.g.cs
 D:\Project\OnlineExaminationSystem\DAL\Web\obj\Debug\netcoreapp3.1\Razor\Views\Students\Delete.cshtml.g.cs
+D:\Project\OnlineExaminationSystem\DAL\Web\obj\Debug\netcoreapp3.1\Razor\Views\Account\Index.cshtml.g.cs

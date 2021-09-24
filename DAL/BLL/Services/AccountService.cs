@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using ViewModels;
 
 namespace BLL.Services
@@ -42,16 +43,18 @@ namespace BLL.Services
             return true;
         }
 
-        public bool GetTeacher(UserViewModel vm)
+        public UserViewModel GetTeacherDetails(int userId)
         {
-            _unitOfWork.GenericRepository<Users>().GetAll().Select(x=>x.Id==vm.Id);
-            return true;
-        }
-
-        public bool GetTeacherById(int id)
-        {
-            _unitOfWork.GenericRepository<Users>().GetByIdAsync(id);
-            return true;
+            try
+            {
+                var teacher = _unitOfWork.GenericRepository<Users>().GetByID(userId);
+                return teacher != null ? new UserViewModel(teacher) : null;
+            }
+            catch (Exception ex)
+            {
+                _iLogger.LogError(ex.Message);
+            }
+            return null;
         }
 
         public PagedResult<UserViewModel> GetAllTeachers(int pageNumber, int pageSize)
@@ -121,20 +124,20 @@ namespace BLL.Services
             return null;
         }
 
-        public bool DeleteTeacher(UserViewModel vm)
+        public async Task<UserViewModel> DeleteTeachers(UserViewModel vm)
         {
             try
             {
-                var obj = _unitOfWork.GenericRepository<Users>().GetByID(vm.Id);
-                _unitOfWork.GenericRepository<Users>().DeleteAsync(obj);
+                Users obj = _unitOfWork.GenericRepository<Users>().GetByID(vm.Id);
+
+                await _unitOfWork.GenericRepository<Users>().DeleteAsync(obj);
                 _unitOfWork.Save();
             }
             catch (Exception ex)
             {
                 _iLogger.LogError(ex.Message);
-                return false;
             }
-            return true;
+            return vm;
         }
     }
 }

@@ -4,9 +4,11 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>@Model.Name</h1>
+<h3>@Model.Name</h3>
 
-<h3>Students</h3>
+<hr />
+
+<h4>Students</h4>
 
 <form asp-action="Details" asp-controller="Groups" method="post">
     <input type="hidden" asp-for="Id" />
@@ -17,5 +19,7 @@
                 <input type="hidden" asp-for="@Model.StudentCheckList[i].Id"/>
                 <input type="hidden" asp-for="@Model.StudentCheckList[i].Name"/>
         }
-    <button type="submit" name="action">Update</button>
+    <button class="btn btn-outline-dark" type="submit" name="action">Update</button>
 </form>
+
+<hr />

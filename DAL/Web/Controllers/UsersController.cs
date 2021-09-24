@@ -40,21 +40,17 @@ namespace Web.Controllers
         }
 
         [HttpGet]
-        public IActionResult Delete(int userId)
+        public IActionResult Delete(string userId)
         {
-            _accountService.GetTeacherById(userId);
-
-            return View();
+            var model = _accountService.GetTeacherDetails(Convert.ToInt32(userId));
+            return View(model);
         }
         [HttpPost]
-        public IActionResult Delete(UserViewModel userViewModel)
+        public IActionResult Delete(int userId)
         {
-            if (ModelState.IsValid)
-            {
-                _accountService.DeleteTeacher(userViewModel);
-                return RedirectToAction("Index");
-            }
-            return View(userViewModel);
+            var model = _accountService.GetTeacherDetails(Convert.ToInt32(userId));
+            _accountService.DeleteTeachers(model);
+            return RedirectToAction("Index");
         }
     }
 }

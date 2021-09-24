@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Delete";
+    int userId = Model.Id;
 }
 
 <h1>Delete</h1>
@@ -10,12 +11,7 @@
 <div>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.HiddenFor(model => model.Id)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.HiddenFor(model => model.Id)
-        </dd>
+        
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Name)
         </dt>
@@ -28,23 +24,12 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.UserName)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Password)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Password)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Role)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Role)
-        </dd>
         
     </dl>
     
     <form asp-action="Delete">
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <input type="submit" value="Delete" class="btn btn-danger" 
+               asp-all-route-data="@(new Dictionary<string, string>{{"userId", userId.ToString()}})" /> |
         <a asp-action="Index">Back to List</a>
     </form>
 </div>
