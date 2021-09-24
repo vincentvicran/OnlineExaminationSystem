@@ -11,6 +11,8 @@ namespace BLL.Services
         bool AddTeacher(UserViewModel vm);
         PagedResult<UserViewModel> GetAllTeachers(int pageNumber, int pageSize);
 
+        bool GetTeacher(UserViewModel vm);
+        bool GetTeacherById(int id);
         bool DeleteTeacher(UserViewModel vm);
     }
 }

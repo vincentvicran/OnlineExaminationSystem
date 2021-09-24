@@ -36,14 +36,18 @@ namespace DAL.Repository
                 dbSet.Attach(entityToDelete);
             }
             dbSet.Remove(entityToDelete);
+            _context.SaveChanges();
         }
         public async Task<T> DeleteAsync(T entityToDelete)
         {
-            if (_context.Entry(entityToDelete).State==EntityState.Detached)
-            {
-                dbSet.Attach(entityToDelete);
-            }
-            dbSet.Remove(entityToDelete);
+            //if (_context.Entry(entityToDelete).State==EntityState.Detached)
+            //{
+            //    dbSet.Attach(entityToDelete);
+            //}
+            //dbSet.Remove(entityToDelete);
+            _context.Entry(entityToDelete).State = EntityState.Deleted;
+            _context.SaveChanges();
+
             return entityToDelete;
         }
         public void DeleteByID(object id)

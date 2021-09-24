@@ -42,6 +42,18 @@ namespace BLL.Services
             return true;
         }
 
+        public bool GetTeacher(UserViewModel vm)
+        {
+            _unitOfWork.GenericRepository<Users>().GetAll().Select(x=>x.Id==vm.Id);
+            return true;
+        }
+
+        public bool GetTeacherById(int id)
+        {
+            _unitOfWork.GenericRepository<Users>().GetByIdAsync(id);
+            return true;
+        }
+
         public PagedResult<UserViewModel> GetAllTeachers(int pageNumber, int pageSize)
         {
             var model = new UserViewModel();
@@ -113,14 +125,8 @@ namespace BLL.Services
         {
             try
             {
-                Users obj = new Users()
-                {
-                    Name = vm.Name,
-                    UserName = vm.UserName,
-                    Password = vm.Password,
-                    Role = (int)EnumRoles.Teacher
-                };
-                _unitOfWork.GenericRepository<Users>().AddAsync(obj);
+                var obj = _unitOfWork.GenericRepository<Users>().GetByID(vm.Id);
+                _unitOfWork.GenericRepository<Users>().DeleteAsync(obj);
                 _unitOfWork.Save();
             }
             catch (Exception ex)

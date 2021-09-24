@@ -12,6 +12,7 @@ namespace BLL.Services
         PagedResult<StudentViewModel> GetAll(int pageNumber, int pageSize);
         Task<StudentViewModel> AddAsync(StudentViewModel vm);
         IEnumerable<Students> GetAllStudents();
+        Task<StudentViewModel> DeleteStudents(StudentViewModel vm);
         bool SetGroupIdToStudents(GroupViewModel vm);
         bool SetExamResult(AttendExamViewModel vm);
         IEnumerable<ResultViewModel> GetExamResults(int studentId);

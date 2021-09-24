@@ -18,6 +18,7 @@ namespace Web.Controllers
         private readonly IQnAService _qnAService;
         private readonly IWebHostEnvironment _env;
 
+
         public StudentsController(IStudentService studentService, IExamService examService, IQnAService qnAService, IWebHostEnvironment env)
         {
             _studentService = studentService;
@@ -149,6 +150,21 @@ namespace Web.Controllers
                 pictureFile.CopyTo(stream);
             }
             return filename;
+        }
+
+
+        [HttpGet]
+        public IActionResult Delete(string studentId)
+        {
+            var model = _studentService.GetStudentDetails(Convert.ToInt32(studentId));
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult Delete(int studentId)
+        {
+            var model = _studentService.GetStudentDetails(Convert.ToInt32(studentId));
+            _studentService.DeleteStudents(model);
+            return RedirectToAction("Index");
         }
     }
 }

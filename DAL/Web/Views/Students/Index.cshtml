@@ -19,7 +19,7 @@
                     <th>Name</th>
                     <th>Username</th>
                     <th>Contact</th>
-                    <th></th>
+                    <th>Actions</th>
                 </tr>
             </thead>
 
@@ -31,9 +31,13 @@
                     <td>@item.UserName</td>
                     <td>@item.Contact</td>
                     <td>
-                        <a asp-action="Result" asp-controller="Students" 
-                           asp-all-route-data="@(new Dictionary<string, string>{{"studentId",item.Id.ToString()}})" 
-                           class="btn btn-primary">Result</a>
+                        <a asp-action="Result" asp-controller="Students"
+                           asp-all-route-data="@(new Dictionary<string, string>{{"studentId",item.Id.ToString()}})"
+                           class="btn btn-primary">Result</a> |
+                        <a asp-action="Delete" asp-controller="Students"
+                           asp-all-route-data="@(new Dictionary<string, string>{{"studentId",item.Id.ToString()}})"
+                           class="btn btn-outline-danger">Delete</a>
+
                     </td>
                 </tr>
                 }

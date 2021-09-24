@@ -209,5 +209,21 @@ namespace BLL.Services
             }
             return vm;
         }
+
+        public async Task<StudentViewModel> DeleteStudents(StudentViewModel vm)
+        {
+            try
+            {
+                Students obj = _unitOfWork.GenericRepository<Students>().GetByID(vm.Id);
+                
+                await _unitOfWork.GenericRepository<Students>().DeleteAsync(obj);
+                _unitOfWork.Save();
+            }
+            catch (Exception ex)
+            {
+                _iLogger.LogError(ex.Message);
+            }
+            return vm;
+        }
     }
 }

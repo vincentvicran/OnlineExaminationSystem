@@ -18,17 +18,19 @@
                     <th>Name</th>
                     <th>Username</th>
                     <th>Role</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
 
             <tbody>
                 @foreach (var item in Model.Data)
                 {
-                    <tr>
-                        <td>@item.Name</td>
-                        <td>@item.UserName</td>
-                        <td>@item.Role</td>
-                    </tr>
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.UserName</td>
+                    <td>@item.Role</td>
+                    <td> @Html.ActionLink("Delete", "Delete", new { userId = item.Id })</td>
+                </tr>
                 }
             </tbody>
         </table>

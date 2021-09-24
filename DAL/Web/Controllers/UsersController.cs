@@ -38,5 +38,23 @@ namespace Web.Controllers
             }
             return View(userViewModel);
         }
+
+        [HttpGet]
+        public IActionResult Delete(int userId)
+        {
+            _accountService.GetTeacherById(userId);
+
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Delete(UserViewModel userViewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                _accountService.DeleteTeacher(userViewModel);
+                return RedirectToAction("Index");
+            }
+            return View(userViewModel);
+        }
     }
 }
