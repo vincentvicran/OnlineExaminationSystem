@@ -18,7 +18,7 @@ namespace Web
         }
         public static string GetFilePath()
         {
-            return configuration["CustomKeys:BaseUrl"] + "file/";
+            return configuration["CustomKeys:BaseUrl"] + "/file/";
         }
     }
 }

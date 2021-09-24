@@ -108,5 +108,27 @@ namespace BLL.Services
             }
             return null;
         }
+
+        public bool DeleteTeacher(UserViewModel vm)
+        {
+            try
+            {
+                Users obj = new Users()
+                {
+                    Name = vm.Name,
+                    UserName = vm.UserName,
+                    Password = vm.Password,
+                    Role = (int)EnumRoles.Teacher
+                };
+                _unitOfWork.GenericRepository<Users>().AddAsync(obj);
+                _unitOfWork.Save();
+            }
+            catch (Exception ex)
+            {
+                _iLogger.LogError(ex.Message);
+                return false;
+            }
+            return true;
+        }
     }
 }

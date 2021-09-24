@@ -11,5 +11,6 @@ namespace ViewModels
         public int TotalQuestions { get; set; }
         public int CorrectAnswer { get; set; }
         public int WrongAnswer { get; set; }
+        public int? ExamsId { get; set; }
     }
 }

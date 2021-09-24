@@ -10,5 +10,7 @@ namespace BLL.Services
         LoginViewModel Login(LoginViewModel vm);
         bool AddTeacher(UserViewModel vm);
         PagedResult<UserViewModel> GetAllTeachers(int pageNumber, int pageSize);
+
+        bool DeleteTeacher(UserViewModel vm);
     }
 }

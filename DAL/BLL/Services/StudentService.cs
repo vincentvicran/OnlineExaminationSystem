@@ -97,20 +97,24 @@ namespace BLL.Services
                 var exams = _unitOfWork.GenericRepository<Exams>().GetAll();
                 var qnas = _unitOfWork.GenericRepository<QnAs>().GetAll();
 
-                var requiredData = examResults.Join(students, er => er.StudentsId, s => s.Id,
-                    (er, st) => new { er, st }).Join(exams, erj => erj.er.ExamsId, ex => ex.Id,
-                    (erj, ex) => new { erj, ex }).Join(qnas, exj => exj.erj.er.QnAsId, q => q.Id,
-                    (exj, q) => new ResultViewModel()
+                var requiredData = examResults
+                    .Join(students, er => er.StudentsId, s => s.Id, (er, st) => new { er, st })
+                    .Join(exams, erj => erj.er.ExamsId, ex => ex.Id, (erj, ex) => new { erj, ex })
+                    .Join(qnas, exj => exj.erj.er.QnAsId, q => q.Id,(exj, q) => new ResultViewModel()
                     {
                         StudentId = studentId,
                         ExamName=exj.ex.Title,
                         TotalQuestions=examResults.Count(a=>a.StudentsId==studentId && 
                         a.ExamsId==exj.ex.Id),
-                        CorrectAnswer=examResults.Count(a=>a.StudentsId==studentId && 
-                        a.ExamsId==exj.ex.Id && a.Answer==q.Answer),
-                        WrongAnswer=examResults.Count(a=>a.StudentsId==studentId && 
-                        a.ExamsId==exj.ex.Id && a.Answer!=q.Answer)
-                    });
+                        CorrectAnswer=examResults.Count(a=>a.StudentsId==studentId &&
+                        a.ExamsId == exj.ex.Id && exj.erj.er.Answer == q.Answer),
+                        WrongAnswer= examResults.Count(a => a.StudentsId == studentId &&
+                         a.ExamsId == exj.ex.Id && exj.erj.er.Answer != q.Answer),
+                        ExamsId = exj.ex.Id,
+
+                    }).GroupBy(s => s.ExamsId).Select(s => s.First());
+
+                return requiredData;
             }
             catch(Exception ex)
             {

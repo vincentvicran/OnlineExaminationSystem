@@ -96,6 +96,7 @@ namespace BLL.Services
             {
                 var qnaRecord = _unitOfWork.GenericRepository<ExamResults>().GetAll()
                     .FirstOrDefault(x => x.ExamsId == examId && x.StudentsId == studentId);
+                return qnaRecord == null? false : true;
             }
             catch (Exception ex)
             {

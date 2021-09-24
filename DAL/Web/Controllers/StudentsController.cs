@@ -81,11 +81,13 @@ namespace Web.Controllers
             bool result = _studentService.SetExamResult(attendExamViewModel);
             return RedirectToAction("AttendExam");
         }
+        [HttpGet]
         public IActionResult Result(string studentId)
         {
             var model = _studentService.GetExamResults(Convert.ToInt32(studentId));
             return View(model);
         }
+        [HttpGet]
         public IActionResult ViewResult()
         {
             LoginViewModel sessionObj = HttpContext.Session.Get<LoginViewModel>("loginvm");
