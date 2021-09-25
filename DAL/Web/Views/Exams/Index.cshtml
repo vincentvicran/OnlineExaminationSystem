@@ -8,15 +8,17 @@
 
 <h4>Exams</h4>
 
-<div id="parentDiv">
+<div >
     <br />
     <a asp-action="Create" asp-controller="Exams" class="btn btn-primary">Create</a>
     <hr />
-    <div>
+    <div id="parentDiv">
+        <p class="ml-5 h3">Exam Routine</p>
+
         <table id="examGrid"
-               class="table table-stiped table-bordered dt-responsive nowrap"
+               class="table table-hover table-bordered dt-responsive nowrap"
                width="70%" cellspacing="0">
-            <thead>
+            <thead class="thead-light">
                 <tr>
                     <th>Title</th>
                     <th>Description</th>
@@ -37,7 +39,11 @@
                 }
             </tbody>
         </table>
-
+        <br />
+        <hr />
+        <div>
+            <a id="printPDF" class="btn btn-outline-info">Print</a><p><em><small>Click <i>print</i> button to print the exam routine pdf!</small></em></p>
+        </div>
         <cs-pager cs-paging-pagesize=(int)Model.PageSize
                   cs-paging-pagenumber=(int)Model.PageNumber
                   cs-paging-totalitems=(int)Model.TotalItems

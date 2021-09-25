@@ -7,15 +7,15 @@
 
 <h4>Students</h4>
 <hr />
-<div>
+<div class="">
     <br />
     <a asp-action="Create" asp-controller="Students" class="btn btn-primary">Create</a>
     <hr />
     <div>
         <table id="studentGrid"
-               class="table table-stiped table-bordered dt-responsive nowrap"
+               class="table table-hover table-bordered dt-responsive nowrap"
                width="70%" cellspacing="0">
-            <thead>
+            <thead class="thead-light">
                 <tr>
                     <th>Name</th>
                     <th>Username</th>
@@ -34,7 +34,7 @@
                     <td>
                         <a asp-action="Result" asp-controller="Students"
                            asp-all-route-data="@(new Dictionary<string, string>{{"studentId",item.Id.ToString()}})"
-                           class="btn btn-primary">Result</a> |
+                           class="btn btn-outline-info">Result</a> |
                         <a asp-action="Delete" asp-controller="Students"
                            asp-all-route-data="@(new Dictionary<string, string>{{"studentId",item.Id.ToString()}})"
                            class="btn btn-outline-danger">Delete</a>

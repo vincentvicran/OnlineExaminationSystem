@@ -10,6 +10,7 @@ namespace ViewModels
         public int Id { get; set; }
         public string Name { get; set; }
         [Required]
+        [Display(Name="User Name")]
         public string UserName { get; set; }
         [Required]
         public string Password { get; set; }

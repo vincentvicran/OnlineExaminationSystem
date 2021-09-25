@@ -8,12 +8,13 @@
 <h4>Student Exam Results</h4>
 <hr />
 <div id="parentDiv">
+    <p class="text-center h3">Exam Report</p>
     <br />
     <div>
         <table id="resultGrid"
-              class="table table-stiped table-bordered dt-responsive nowrap"
+               class="table table-hover table-bordered dt-responsive nowrap"
                width="70%" cellspacing="0">
-            <thead>
+            <thead class="thead-light">
                 <tr>
                     <th>Exam Name</th>
                     <th>Total Questions</th>
@@ -25,20 +26,22 @@
             <tbody>
                 @foreach (var item in Model)
                 {
-                <tr>
-                    <td>@item.ExamName</td>
-                    <td>@item.TotalQuestions</td>
-                    <td>@item.CorrectAnswer</td>
-                    <td>@item.WrongAnswer</td>
-                </tr>
+                    <tr>
+                        <td>@item.ExamName</td>
+                        <td>@item.TotalQuestions</td>
+                        <td>@item.CorrectAnswer</td>
+                        <td>@item.WrongAnswer</td>
+                    </tr>
                 }
             </tbody>
         </table>
     </div>
 </div>
+<br />
+<hr />
 <div>
-    <a asp-action="Index">Student List</a>
-    <a id="printPDF" class="btn btn-primary">Print</a>
+    <a asp-action="Index" class="btn btn-outline-dark">Student List</a> |
+    <a id="printPDF" class="btn btn-outline-info">Print</a><p><em><small>Click <i>print</i> button to print the student result pdf!</small></em></p>
 </div>
 
 @section scripts{ 

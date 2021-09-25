@@ -6,9 +6,9 @@
 
 }
 
-<h3>@Model.ExamName</h3>
-
-<h4>Exam Paper</h4>
+<h3>Exam Paper</h3>
+<hr />
+<h4>@Model.ExamName</h4>
 <hr />
 
 @if (Model.Message == "")
@@ -24,7 +24,7 @@
                 <label for="@Model.QnAs[i].Question">@Model.QnAs[i].Question</label>
             </li>
             <li type="none">
-                <select asp-for="@Model.QnAs[i].SelectedAnswer" class="form-control">
+                <select asp-for="@Model.QnAs[i].SelectedAnswer" class="form-control w-75">
                     <option value="1">@Model.QnAs[i].Option1</option>
                     <option value="2">@Model.QnAs[i].Option2</option>
                     <option value="3">@Model.QnAs[i].Option3</option>
@@ -33,7 +33,7 @@
             </li>
         </ul>
     }
-    <button type="submit" name="action">Submit</button>
+    <button type="submit" name="action" class="btn btn-outline-success ml-2">Submit</button>
 </form>
 }
 else 

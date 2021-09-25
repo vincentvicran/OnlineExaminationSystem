@@ -13,9 +13,9 @@
     <hr />
     <div>
         <table id="groupGrid"
-               class="table table-stiped table-bordered dt-responsive nowrap"
+               class="table table-hover table-bordered dt-responsive nowrap"
                width="70%" cellspacing="0">
-            <thead>
+            <thead class="thead-light">
                 <tr>
                     <th>Name</th>
                     <th>Description</th>
@@ -31,7 +31,7 @@
                         <td>@item.Description</td>
                         <td><a asp-action="Details" asp-controller="Groups" 
                                asp-all-route-data="@(new Dictionary<string, string>{{"groupId",item.Id.ToString()}})"
-                               class="btn btn-primary">Students</a></td>
+                               class="btn btn-outline-dark">Students</a></td>
                     </tr>
                 }
             </tbody>
